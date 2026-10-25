@@ -2,3 +2,5 @@ outputs/
 results/*/videos/
 __pycache__/
 .venv/
+.DS_Store
+results/*/eval.log
