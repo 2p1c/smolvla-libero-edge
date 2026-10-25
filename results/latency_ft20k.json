@@ -1,0 +1,51 @@
+{
+  "policy": "outputs/smolvla_libero_ft/checkpoints/020000/pretrained_model",
+  "device": "NVIDIA GeForce RTX 4090",
+  "results": [
+    {
+      "config": "fp32",
+      "num_steps": 10,
+      "p50_ms": 265.97,
+      "p90_ms": 286.15,
+      "inference_hz": 3.8,
+      "min_n_action_steps_at_20hz": 6,
+      "peak_mem_gb": 0.97
+    },
+    {
+      "config": "bf16",
+      "num_steps": 10,
+      "p50_ms": 255.12,
+      "p90_ms": 282.74,
+      "inference_hz": 3.9,
+      "min_n_action_steps_at_20hz": 6,
+      "peak_mem_gb": 0.97
+    },
+    {
+      "config": "bf16",
+      "num_steps": 5,
+      "p50_ms": 161.61,
+      "p90_ms": 171.48,
+      "inference_hz": 6.2,
+      "min_n_action_steps_at_20hz": 4,
+      "peak_mem_gb": 0.97
+    },
+    {
+      "config": "bf16+compile",
+      "num_steps": 10,
+      "p50_ms": 67.66,
+      "p90_ms": 69.24,
+      "inference_hz": 14.8,
+      "min_n_action_steps_at_20hz": 2,
+      "peak_mem_gb": 1.05
+    },
+    {
+      "config": "bf16+compile",
+      "num_steps": 5,
+      "p50_ms": 36.78,
+      "p90_ms": 37.16,
+      "inference_hz": 27.2,
+      "min_n_action_steps_at_20hz": 1,
+      "peak_mem_gb": 1.03
+    }
+  ]
+}

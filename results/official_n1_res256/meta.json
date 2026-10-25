@@ -1,0 +1,12 @@
+{
+  "policy": "HuggingFaceVLA/smolvla_libero",
+  "suite": "libero_spatial",
+  "episodes_per_task": 10,
+  "n_action_steps": null,
+  "num_steps": null,
+  "eval_batch": 10,
+  "extra_args": [
+    "--env.observation_height=256",
+    "--env.observation_width=256"
+  ]
+}

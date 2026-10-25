@@ -1,0 +1,9 @@
+{
+  "policy": "outputs/ft_spatial_only/checkpoints/last/pretrained_model",
+  "suite": "libero_spatial",
+  "episodes_per_task": 10,
+  "n_action_steps": 10,
+  "num_steps": null,
+  "eval_batch": 10,
+  "extra_args": []
+}

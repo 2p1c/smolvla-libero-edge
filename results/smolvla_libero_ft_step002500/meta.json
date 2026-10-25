@@ -1,0 +1,9 @@
+{
+  "policy": "/root/smolvla-libero-edge/outputs/smolvla_libero_ft/checkpoints/002500/pretrained_model",
+  "suite": "libero_spatial",
+  "episodes_per_task": 5,
+  "n_action_steps": null,
+  "num_steps": null,
+  "eval_batch": 10,
+  "extra_args": []
+}

@@ -1,0 +1,54 @@
+{
+  "task": "pick up the black bowl on the ramekin and place it on the plate",
+  "dataset_episodes": [
+    1264,
+    1265,
+    1266,
+    1271,
+    1288
+  ],
+  "sim_keys": [
+    "observation.images.image",
+    "observation.images.image2"
+  ],
+  "cameras": {
+    "observation.images.image": {
+      "corr_by_transform_applied_to_eval_frame": {
+        "identity": 0.9411816000938416,
+        "hflip": 0.025819646567106246,
+        "vflip": 0.1827544540166855,
+        "rot180": -0.2696245849132538
+      },
+      "best": "identity",
+      "eval_shape": [
+        360,
+        360,
+        3
+      ],
+      "dataset_shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "observation.images.image2": {
+      "corr_by_transform_applied_to_eval_frame": {
+        "identity": 0.895090889930725,
+        "hflip": 0.2770059883594513,
+        "vflip": -0.05231045708060265,
+        "rot180": -0.1819568008184433
+      },
+      "best": "identity",
+      "eval_shape": [
+        360,
+        360,
+        3
+      ],
+      "dataset_shape": [
+        256,
+        256,
+        3
+      ]
+    }
+  }
+}

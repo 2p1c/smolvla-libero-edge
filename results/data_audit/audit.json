@@ -1,0 +1,220 @@
+{
+  "dataset": "lerobot/libero",
+  "codebase_version": "v3.0",
+  "declared_fps": 10.0,
+  "eval_control_hz": 20,
+  "total_episodes": 1693,
+  "total_frames": 273465,
+  "demos_per_task": {
+    "min": 29,
+    "max": 50
+  },
+  "by_suite": {
+    "libero_spatial": {
+      "episodes": 432,
+      "frames": 52970,
+      "len_min": 75,
+      "len_p50": 123.0,
+      "len_max": 193,
+      "idle_frac": 0.0,
+      "leading_idle_mean": 0.0,
+      "gripper_switches_p50": 2.0,
+      "saturated_frac": 0.1363,
+      "frame_share": 0.1937,
+      "eval_max_steps": 280
+    },
+    "libero_object": {
+      "episodes": 454,
+      "frames": 66984,
+      "len_min": 114,
+      "len_p50": 146.0,
+      "len_max": 254,
+      "idle_frac": 0.0,
+      "leading_idle_mean": 0.0,
+      "gripper_switches_p50": 2.0,
+      "saturated_frac": 0.0503,
+      "frame_share": 0.2449,
+      "eval_max_steps": 280
+    },
+    "libero_goal": {
+      "episodes": 428,
+      "frames": 52042,
+      "len_min": 75,
+      "len_p50": 105.0,
+      "len_max": 270,
+      "idle_frac": 0.0,
+      "leading_idle_mean": 0.0,
+      "gripper_switches_p50": 2.0,
+      "saturated_frac": 0.1261,
+      "frame_share": 0.1903,
+      "eval_max_steps": 300
+    },
+    "libero_10": {
+      "episodes": 379,
+      "frames": 101469,
+      "len_min": 150,
+      "len_p50": 259.0,
+      "len_max": 505,
+      "idle_frac": 0.0,
+      "leading_idle_mean": 0.0,
+      "gripper_switches_p50": 4.0,
+      "saturated_frac": 0.0236,
+      "frame_share": 0.371,
+      "eval_max_steps": 520
+    }
+  },
+  "idle_frames_total": 0,
+  "episodes_with_leading_idle": 0,
+  "gripper_values": [
+    -1.0,
+    1.0
+  ],
+  "anomalies": [
+    {
+      "episode_index": 537,
+      "reason": "length 126 > task Q3+3IQR (124)"
+    },
+    {
+      "episode_index": 387,
+      "reason": "length 270 > task Q3+3IQR (263)"
+    },
+    {
+      "episode_index": 672,
+      "reason": "length 196 > task Q3+3IQR (188)"
+    },
+    {
+      "episode_index": 866,
+      "reason": "length 254 > task Q3+3IQR (190)"
+    },
+    {
+      "episode_index": 923,
+      "reason": "length 195 > task Q3+3IQR (190)"
+    },
+    {
+      "episode_index": 1177,
+      "reason": "length 201 > task Q3+3IQR (190)"
+    },
+    {
+      "episode_index": 1090,
+      "reason": "length 219 > task Q3+3IQR (196)"
+    },
+    {
+      "episode_index": 1119,
+      "reason": "length 199 > task Q3+3IQR (196)"
+    },
+    {
+      "episode_index": 908,
+      "reason": "length 195 > task Q3+3IQR (193)"
+    },
+    {
+      "episode_index": 1105,
+      "reason": "length 196 > task Q3+3IQR (179)"
+    },
+    {
+      "episode_index": 976,
+      "reason": "length 167 > task Q3+3IQR (158)"
+    },
+    {
+      "episode_index": 986,
+      "reason": "length 177 > task Q3+3IQR (158)"
+    },
+    {
+      "episode_index": 1056,
+      "reason": "length 163 > task Q3+3IQR (158)"
+    },
+    {
+      "episode_index": 1071,
+      "reason": "length 216 > task Q3+3IQR (158)"
+    },
+    {
+      "episode_index": 939,
+      "reason": "length 207 > task Q3+3IQR (203)"
+    },
+    {
+      "episode_index": 841,
+      "reason": "length 224 > task Q3+3IQR (195)"
+    },
+    {
+      "episode_index": 1330,
+      "reason": "length 168 > task Q3+3IQR (153)"
+    },
+    {
+      "episode_index": 1650,
+      "reason": "length 129 > task Q3+3IQR (121)"
+    },
+    {
+      "episode_index": 1402,
+      "reason": "length 173 > task Q3+3IQR (173)"
+    },
+    {
+      "episode_index": 1484,
+      "reason": "length 182 > task Q3+3IQR (173)"
+    },
+    {
+      "episode_index": 1633,
+      "reason": "length 193 > task Q3+3IQR (173)"
+    }
+  ],
+  "normalization_check": {
+    "policy": "/root/.cache/huggingface/hub/models--HuggingFaceVLA--smolvla_libero/snapshots/6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+    "action": {
+      "mean": {
+        "recomputed": [
+          0.0628,
+          0.0868,
+          -0.0904,
+          0.0005,
+          0.0056,
+          -0.0052,
+          -0.0496
+        ],
+        "max_diff_vs_meta_in_std": 3.098147353146481e-09,
+        "max_diff_vs_checkpoint_in_std": 5.862057386413448e-09
+      },
+      "std": {
+        "recomputed": [
+          0.3355,
+          0.3784,
+          0.4447,
+          0.0392,
+          0.0634,
+          0.078,
+          0.9988
+        ],
+        "max_diff_vs_meta_in_std": 4.5055867488924554e-08,
+        "max_diff_vs_checkpoint_in_std": 5.644864745984987e-08
+      }
+    },
+    "observation.state": {
+      "mean": {
+        "recomputed": [
+          -0.0465,
+          0.0344,
+          0.7646,
+          2.9722,
+          -0.2205,
+          -0.1256,
+          0.0269,
+          -0.0272
+        ],
+        "max_diff_vs_meta_in_std": 9.136825729262005e-08,
+        "max_diff_vs_checkpoint_in_std": 2.1912351614501378e-07
+      },
+      "std": {
+        "recomputed": [
+          0.1049,
+          0.1518,
+          0.3785,
+          0.3443,
+          0.9069,
+          0.3254,
+          0.0142,
+          0.0141
+        ],
+        "max_diff_vs_meta_in_std": 8.788936366000201e-07,
+        "max_diff_vs_checkpoint_in_std": 6.4765971994364e-08
+      }
+    }
+  },
+  "spatial_episode_count": 432
+}

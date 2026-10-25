@@ -1,6 +1,8 @@
 # Shared settings. Sourced by the other scripts; override any of these from the environment.
 
 export MUJOCO_GL="${MUJOCO_GL:-egl}"
+# Mirrors (hf-mirror.com) can't authorize Xet storage downloads (401); plain HTTP works everywhere.
+export HF_HUB_DISABLE_XET="${HF_HUB_DISABLE_XET:-1}"
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 RESULTS_DIR="${RESULTS_DIR:-$ROOT/results}"
