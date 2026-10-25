@@ -16,6 +16,7 @@
 | 模型 | 失败数 | approach_wrong_dir | grasp_miss | place_offset |
 |---|---|---|---|---|
 | `HuggingFaceVLA/smolvla_libero`，n=1（`failure_labels_official_n1.csv`） | 31/100 | 23（74%） | 8（26%） | 0 |
+| 本项目微调 20k，n=1（`failure_labels_ft20k_n1.csv`） | 25/100 | 14（56%） | 5（20%） | 6（24%） |
 | 本项目微调 20k，n=10（`failure_labels_ft20k_n10.csv`） | 22/100 | 10（45%） | 2（9%） | 10（45%） |
 
-注意：两行的 n 不同（1 vs 10），`place_offset` 的变化可能来自微调，也可能来自 n。
+同为 n=1 时，微调模型已经出现 6 次 `place_offset`，官方模型为 0，所以放置偏差主要来自微调本身；n=10 又多了 4 次。

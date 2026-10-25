@@ -1,0 +1,10 @@
+{
+  "policy": "outputs/smolvla_libero_ft/checkpoints/020000/pretrained_model",
+  "suite": "libero_spatial",
+  "episodes_per_task": 10,
+  "n_action_steps": 1,
+  "num_steps": 10,
+  "eval_batch": 10,
+  "extra_args": [],
+  "entry": "lerobot-eval"
+}

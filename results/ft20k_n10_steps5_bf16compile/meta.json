@@ -1,0 +1,14 @@
+{
+  "policy": "outputs/smolvla_libero_ft/checkpoints/020000/pretrained_model",
+  "suite": "libero_spatial",
+  "episodes_per_task": 10,
+  "n_action_steps": 10,
+  "num_steps": 5,
+  "eval_batch": 10,
+  "extra_args": [
+    "--policy.use_amp=true",
+    "--policy.compile_model=true",
+    "--policy.compile_mode=default"
+  ],
+  "entry": "python scripts/eval_timed.py"
+}

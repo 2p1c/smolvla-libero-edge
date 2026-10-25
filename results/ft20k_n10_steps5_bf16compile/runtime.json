@@ -1,0 +1,12 @@
+{
+  "autocast_dtype_when_use_amp": "bfloat16",
+  "use_amp": "true",
+  "compile_model": "true",
+  "compile_mode": "default",
+  "eval_batch_size": "10",
+  "note": "latency per batched action-chunk inference (all envs of a task at once), CUDA-synchronized",
+  "n_inferences": 248,
+  "warmup_first20_ms_max": 123961.3,
+  "steady_p50_ms": 71.68,
+  "steady_p90_ms": 77.13
+}
